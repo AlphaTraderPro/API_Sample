@@ -1,4 +1,5 @@
 ## How to use:
+
 1. Working with API is possible via any Web-browser using just its address line.
 2. Use code examples to implement custom scripts. Examples provided in Python and C# but any language with native HTTP client library is supported. 
 
