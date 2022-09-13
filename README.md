@@ -3,14 +3,14 @@
 2. Use code examples to implement custom scripts. Examples provided in Python and C# but any language with native HTTP client library is supported. 
 
 ## API Connection state:
-### /connection
+### http://localhost:5005/connection
 
 Output sample (as JSON dict):
 
 {"connected":"1"}
 
 ## Submitting orders:
-### /sendOrder?%variables%
+### http://localhost:5005/sendOrder?%variables%
 
 Valid sendOrder examples:
 
@@ -36,7 +36,7 @@ price:     buy/sell limit or stop trigger price, should set 0 for market orders
 
 
 ## Canceling orders:
-### /cancelOrder?%variables%
+### http://localhost:5005/cancelOrder?%variables%
 
 Valid cancelOrder example:
 
@@ -47,7 +47,7 @@ Supported variables:
 id:    active order id from /orders table 
 
 ## Listing orders:
-### /orders
+### http://localhost:5005/orders
 
 Output sample (as JSON dict):
 
@@ -58,7 +58,7 @@ TEST123+229139333951586?:[OrderID=TEST123+229139333951586?, Symbol=BAC, Side=SEL
 TEST123+22913622582203?:[OrderID=TEST123+22913622582203?, Symbol=SPY, Side=SELL, Qty=1, Price=200, OrderType=Limit, StopPrice=0, Status=Filled]}"
 
 ## Listing positions:
-### /positions
+### http://localhost:5005/positions
 
 Output sample (as JSON list):
 
